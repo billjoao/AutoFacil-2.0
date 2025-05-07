@@ -20,17 +20,17 @@ import {
 export function Login() {
   return (
     <div className="flex h-screen">
-      
-      
+
+
       <div
         className="w-1/2 bg-cover bg-center"
         style={{ backgroundImage: "url('/carro_tela_login.png')" }}
       />
 
-      
+
       <div className="w-1/2 flex items-center justify-center p-8 bg-white">
         <Tabs defaultValue="mecanico" className="w-full max-w-md">
-          
+
           <TabsList className="grid w-full grid-cols-2 mb-4">
             <TabsTrigger value="mecanico">Mecânico</TabsTrigger>
             <TabsTrigger value="distribuidor">Distribuidor</TabsTrigger>
@@ -60,10 +60,12 @@ export function Login() {
               </CardContent>
               <CardFooter className="flex flex-col space-y-4">
                 <div className="flex w-full gap-4">
-                  <Button className="flex-1 bg-red-950 hover:bg-red-700 text-white">
-                    Entrar
-                  </Button>
-                  <Link to="/" className="flex-1">
+                  <Link to="/auto/produtos" className="">
+                    <Button className="flex-1 bg-red-950 hover:bg-red-700 text-white">
+                      Entrar
+                    </Button>
+                  </Link>
+                  <Link to="/" className="">
                     <Button variant="outline" className="w-full">
                       Voltar
                     </Button>
@@ -103,11 +105,13 @@ export function Login() {
               </CardContent>
               <CardFooter className="flex flex-col space-y-4">
                 <div className="flex w-full gap-4">
-                  <Button className="flex-1 bg-red-950 hover:bg-red-700 text-white">
-                    Entrar
-                  </Button>
-                  <Link to="/" className="flex-1">
-                    <Button variant="outline" className="w-full">
+                  <Link to="/auto/home" className="">
+                    <Button className="bg-red-950 hover:bg-red-700 text-white">
+                      Entrar
+                    </Button>
+                  </Link>
+                  <Link to="/" className="">
+                    <Button variant="outline" className="">
                       Voltar
                     </Button>
                   </Link>

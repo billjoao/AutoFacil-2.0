@@ -79,10 +79,12 @@ export function Cadastro() {
                             </CardContent>
 
                             <CardFooter className="flex w-full gap-4">
-                                <Button className="flex-1 bg-red-950 hover:bg-red-700 text-white">
-                                    Cadastrar
-                                </Button>
-                                <Link to="/" className="flex-1">
+                                <Link to="/auto/produtos" className="">
+                                    <Button className="flex-1 bg-red-950 hover:bg-red-700 text-white">
+                                        Cadastrar
+                                    </Button>
+                                </Link>
+                                <Link to="/" className="">
                                     <Button variant="outline" className="w-full">
                                         Voltar
                                     </Button>
@@ -132,10 +134,12 @@ export function Cadastro() {
                                 </div>
                             </CardContent>
                             <CardFooter className="flex w-full gap-4">
-                                <Button className="flex-1 bg-red-950 hover:bg-red-700 text-white">
-                                    Cadastrar
-                                </Button>
-                                <Link to="/" className="flex-1">
+                                <Link to="/auto/home" className="">
+                                    <Button className="flex-1 bg-red-950 hover:bg-red-700 text-white">
+                                        Cadastrar
+                                    </Button>
+                                </Link>
+                                <Link to="/" className="">
                                     <Button variant="outline" className="w-full">
                                         Voltar
                                     </Button>
