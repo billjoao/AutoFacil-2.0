@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export function LandingPage() {
   return (
@@ -14,14 +15,19 @@ export function LandingPage() {
         </ul>
       </header>
 
-      {/* Hero Section */}
-      <section className="flex items-center justify-center bg-gray-100 py-24">
-        <div className="text-center">
-          <h2 className="text-4xl font-bold text-red-950 mb-6">Sua plataforma de peças automobilísticas</h2>
-          <p className="text-lg text-gray-700 mb-8">Encontre as melhores peças para o seu carro, com qualidade e agilidade.</p>
-          <Button className="bg-red-950 hover:bg-red-700 text-white">Comece Agora</Button>
+      <section className="relative flex items-center justify-center bg-[url('/carro_tela_login.png')] bg-[center_-80%] bg-cover py-24">
+        
+        <div className="absolute inset-0 bg-black/40 z-0" />
+
+        <div className="text-center text-white z-10">
+          <h2 className="text-4xl font-bold mb-6">Sua plataforma de peças automobilísticas</h2>
+          <p className="text-lg font-bold mb-8">Encontre as melhores peças para o seu carro, com qualidade e agilidade.</p>
+          <Link to="/cadastrar">
+            <Button className="bg-red-950 hover:bg-red-700 text-white cursor-pointer">Comece Agora</Button>
+          </Link>
         </div>
       </section>
+
 
       {/* About Section */}
       <section id="sobre" className="py-24 px-6 bg-white">
